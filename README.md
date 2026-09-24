@@ -241,3 +241,11 @@ Las pruebas utilizan SQLite en memoria y no modifican la base de datos PostgreSQ
 ## Estado del proyecto
 
 Proyecto desarrollado como parte de un portafolio profesional. Actualmente está preparado para ejecutarse en un entorno local.
+
+## Licencia
+
+Copyright © 2026 [TU NOMBRE LEGAL]. Todos los derechos reservados.
+
+Este repositorio se publica únicamente con fines de portafolio y evaluación.
+No se concede permiso para usar, copiar, modificar, distribuir, sublicenciar
+o comercializar este software sin autorización previa y por escrito.
