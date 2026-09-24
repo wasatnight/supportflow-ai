@@ -1,5 +1,7 @@
 # SupportFlow AI
 
+[![Tests](https://github.com/wasatnight/supportflow-ai/actions/workflows/tests.yml/badge.svg)](https://github.com/wasatnight/supportflow-ai/actions/workflows/tests.yml)
+
 Aplicación de escritorio para gestionar solicitudes de soporte, mantener conversaciones con clientes y generar sugerencias de respuesta mediante inteligencia artificial local.
 
 El proyecto utiliza una arquitectura cliente-servidor con PySide6, FastAPI, PostgreSQL y Ollama.
