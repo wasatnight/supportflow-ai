@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+pythonpath = ["backend"]
+testpaths = ["backend/tests"]
+addopts = "--cov=app --cov-report=term-missing --cov-fail-under=80"
