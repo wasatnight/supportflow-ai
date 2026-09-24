@@ -244,7 +244,7 @@ Proyecto desarrollado como parte de un portafolio profesional. Actualmente está
 
 ## Licencia
 
-Copyright © 2026 [TU NOMBRE LEGAL]. Todos los derechos reservados.
+Copyright © 2026 [wasatnight]. Todos los derechos reservados.
 
 Este repositorio se publica únicamente con fines de portafolio y evaluación.
 No se concede permiso para usar, copiar, modificar, distribuir, sublicenciar
