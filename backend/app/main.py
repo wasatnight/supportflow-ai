@@ -1,3 +1,6 @@
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
+
 from typing import Annotated
 
 from fastapi import (
@@ -7,6 +10,10 @@ from fastapi import (
     Response,
     status,
 )
+
+from app.core.config import settings
+from app.db.database import initialize_database
+
 from sqlalchemy.exc import IntegrityError
 
 from app.db.dependencies import get_db
@@ -34,10 +41,22 @@ from app.models.support_message import SupportMessage
 from app.schemas.ai_suggestion import AiSuggestionResponse
 from app.services import OllamaService, OllamaServiceError
 
+
+@asynccontextmanager
+async def lifespan(
+    _: FastAPI,
+) -> AsyncIterator[None]:
+    if settings.database_mode == "sqlite":
+        initialize_database()
+
+    yield
+
+
 app = FastAPI(
     title="SupportFlow AI API",
     description="API para la gestión inteligente de solicitudes.",
     version="0.1.0",
+    lifespan=lifespan,
 )
 
 
